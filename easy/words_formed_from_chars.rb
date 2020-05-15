@@ -24,3 +24,25 @@
 # includes characters stored in chars variable (check to make sure each char used only once)
 # if it satisfies these conditions, add element into new array
 # take this new array and add up each character in string
+
+def find_words_with_chars(words, string)
+  x = words.find_all do |word|
+    word.chars.all? do |char|
+      string.include?(char)
+    end
+  end
+
+  y = x.map do |word|
+    word.length
+  end
+
+  y.sum
+end
+
+words = ["cat","bt","hat","tree"]
+chars = "atach"
+
+p find_words_with_chars(words, chars)
+
+# this solution does not keep track of the number of times a character appears in a string. Just that it does.
+# also, nested iteration is far from optimal
