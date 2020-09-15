@@ -15,6 +15,8 @@ def remove_duplicates(nums)
   new_nums.length
 end
 
+# this was definitely not what the code challenge asked for. The answer was correct, but the output was not
+
 nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 
 p remove_duplicates(nums)
