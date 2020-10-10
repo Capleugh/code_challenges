@@ -12,11 +12,11 @@ def remove_duplicates(nums)
       new_nums[num] = num
     end
   end
-  new_nums.length
+  new_nums.keys
 end
 
 # this was definitely not what the code challenge asked for. The answer was correct, but the output was not
 
 nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 
-p remove_duplicates(nums)
+remove_duplicates(nums)

@@ -42,7 +42,7 @@ end
 words = ["cat","bt","hat","tree"]
 chars = "atach"
 
-p find_words_with_chars(words, chars)
+find_words_with_chars(words, chars)
 
 # this solution does not keep track of the number of times a character appears in a string. Just that it does.
 # also, nested iteration is far from optimal
